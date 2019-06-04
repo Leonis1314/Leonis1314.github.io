@@ -1,6 +1,6 @@
 /**
  * Insight search plugin
- * @author PPOffice { @link https://github.com/ppoffice }
+ * @author Leonis1314 { @link https://github.com/Leonis1314 }
  */
 (function ($, CONFIG) {
     var $main = $('.ins-search');

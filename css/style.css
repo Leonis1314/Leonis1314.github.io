@@ -5,7 +5,11 @@ html {
   font-size: 14px;
 }
 body {
-  background-color: #f7f7f7;
+  background-image: url("/images/background-forest.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 body,
 button,

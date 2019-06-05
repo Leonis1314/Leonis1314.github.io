@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var $button = $('#back-to-top');
-    // var $footer = $('footer.footer');
+    var $footer = $('footer.footer');
     var $mainColumn = $('.column-main');
     var $leftSidebar = $('.column-left');
     var $rightSidebar = $('.column-right');
@@ -119,8 +119,8 @@ $(document).ready(function () {
             var nextState;
             var padding = ($mainColumn.outerWidth() - $mainColumn.width()) / 2;
             var maxLeft = $(window).width() - getButtonWidth() - rightMargin;
-            // var maxBottom = $footer.offset().top + getButtonHeight() / 2 + bottomMargin;
-            var maxBottom = getButtonHeight() / 2 + bottomMargin;
+            var maxBottom = $footer.offset().top + getButtonHeight() / 2 + bottomMargin;
+            // var maxBottom = getButtonHeight() / 2 + bottomMargin;
             if (getScrollTop() == 0 || getScrollBottom() < getRightSidebarBottom() + padding + getButtonHeight()) {
                 nextState = state['desktop-hidden'];
             } else if (getScrollBottom() < maxBottom) {
